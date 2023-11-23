@@ -36,10 +36,11 @@ export async function fetchCharacters() {
     cardContainer.append(characterCard);
   });
 
-  // Set maxPage based on the number of pages in the API response
+  // Set startpage on empty search
   if (searchQuery === "") {
     page = 1;
   }
+  // Set maxPage based on the number of pages in the API response
   if (apiData.info && apiData.info.pages) {
     maxPage = apiData.info.pages;
   }
