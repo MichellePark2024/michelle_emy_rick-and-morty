@@ -4,10 +4,14 @@
   flex-flow: row wrap;
   gap: 10px;
   margin-bottom: 10px;
-  
 }
 .card {
-  
+  width: 300px;
+  border-radius: 20px 20px 20px 20px;
+  border: solid 4px #bcdc45;
+  justify-content: center;
+  display: flex;
+  padding: 20px;
   margin: 10px;
   background-color: var(--color-secondary);
 }
@@ -28,7 +32,4 @@
 
 li {
   list-style: none;
-  
 }
-
-
