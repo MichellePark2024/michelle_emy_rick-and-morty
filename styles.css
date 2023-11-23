@@ -14,6 +14,8 @@
   --color-secondary: #f6f6f6;
   --font-family: system-ui;
   background-color: #97ce4c;
+  --accent-color: lightblue;
+  --active-color: rgba(0, 155, 255, 1);
 }
 
 body {
