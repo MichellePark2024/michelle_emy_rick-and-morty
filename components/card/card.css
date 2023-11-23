@@ -25,6 +25,11 @@
   display: grid;
   gap: 20px;
 }
+.card__image {
+  border-radius: 50%;
+  width: 250px;
+  border: solid 4px #bcdc45;
+}
 
 .card__info-description {
   text-align: right;
