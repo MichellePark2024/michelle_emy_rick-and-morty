@@ -2,11 +2,12 @@
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  row-gap: 10px;
+  gap: 10px;
   margin-bottom: 10px;
+  
 }
 .card {
-  width: 300px;
+  
   margin: 10px;
   background-color: var(--color-secondary);
 }
@@ -27,4 +28,10 @@
 
 li {
   list-style: none;
+  
 }
+
+
+/* .card__image-container {
+  text-align: center;
+} */
