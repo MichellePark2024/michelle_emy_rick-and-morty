@@ -1,4 +1,6 @@
 .navigation {
+  display: flex;
+  justify-content: center;
   height: 30px;
   display: grid;
   grid-template-columns: 100px 100px 100px;
