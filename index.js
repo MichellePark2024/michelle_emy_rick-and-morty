@@ -49,6 +49,14 @@ export async function fetchCharacters() {
     const characterCard = createCharacterCard(character);
     cardContainer.append(characterCard);
   });
+
+  // Set maxPage based on the number of pages in the API response
+  if (searchQuery === "") {
+    page = 1;
+  }
+  if (apiData.info && apiData.info.pages) {
+    maxPage = apiData.info.pages;
+  }
 }
 
 nextButton.addEventListener("click", () => {
