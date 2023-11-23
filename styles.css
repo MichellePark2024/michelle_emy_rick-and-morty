@@ -13,8 +13,8 @@
   --color-primary: rgb(51, 51, 51);
   --color-secondary: #f6f6f6;
   --font-family: system-ui;
-  background-color: #97ce4c;
-  --accent-color: lightblue;
+  background-color: blueviolet;
+  --accent-color: yellowgreen;
   --active-color: rgba(0, 155, 255, 1);
 }
 
@@ -60,8 +60,8 @@ main {
 }
 
 body.dark-mode {
-  background-color: blueviolet;
-  color: greenyellow;
+  background-color: yellowgreen;
+  color: blueviolet;
   display: grid;
 }
 
