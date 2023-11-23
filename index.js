@@ -31,8 +31,10 @@ switchBtn.addEventListener("click", ()=> {
 let maxPage = 42;
 let page = 1;
 let searchQuery = "";
+
+//load the first 20 cards
 fetchCharacters();
-// maxPage();
+//fetch API data
 export async function fetchCharacters() {
   const url = `https://rickandmortyapi.com/api/character?page=${page}&name=${searchQuery}`;
 
@@ -42,9 +44,10 @@ export async function fetchCharacters() {
   updatePagination();
 
   console.log(apiData);
-
+  //empty the page each time so it doesn't add up on top of each other and is only 20 each time
   cardContainer.innerHTML = "";
 
+  //get each beautiful card
   apiData.results.forEach((character) => {
     const characterCard = createCharacterCard(character);
     cardContainer.append(characterCard);
@@ -60,6 +63,7 @@ export async function fetchCharacters() {
   }
 }
 
+//navigation event listners
 nextButton.addEventListener("click", () => {
   if (page < maxPage) {
     fetchCharacters(page++);
@@ -76,6 +80,7 @@ function updatePagination() {
   pagination.textContent = `${page}/${maxPage}`;
 }
 
+//Search event listners
 searchBar.addEventListener("input", (event) => {
   searchQuery = event.target.value;
   fetchCharacters();
