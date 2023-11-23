@@ -13,6 +13,7 @@
   --color-primary: rgb(51, 51, 51);
   --color-secondary: #f6f6f6;
   --font-family: system-ui;
+  background-color: #97ce4c;
 }
 
 body {
