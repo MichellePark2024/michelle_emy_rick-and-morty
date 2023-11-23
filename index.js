@@ -13,6 +13,20 @@ const prevButton = document.querySelector('[data-js="button-prev"]');
 const nextButton = document.querySelector('[data-js="button-next"]');
 const pagination = document.querySelector('[data-js="pagination"]');
 
+//dark mode
+const switchBtn = document.querySelector('[data-js="switch"]');
+const body = document.getElementsByTagName("body");
+
+const settings = document.querySelector('[data-js="settings"]');
+
+switchBtn.addEventListener("click", ()=> {
+    document.body.classList.toggle("dark-mode");
+
+    body.classList.toggle("dark-mode");
+    settings.classList.toggle("dark-mode");
+});
+
+
 // States
 let maxPage = 42;
 let page = 1;
@@ -57,3 +71,6 @@ searchBar.addEventListener("input", (event) => {
   searchQuery = event.target.value;
   fetchCharacters();
 });
+
+
+

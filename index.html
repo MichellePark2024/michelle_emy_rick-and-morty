@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -33,6 +33,19 @@
           </button>
         </form>
       </div>
+        <!-- dark-mode -->
+    <section class="settings" data-js="settings">
+      <div class="settings__dark-mode-wrapper">
+        <label for="dark-mode" class="settings__dark-mode-label"
+          >Dark Mode</label
+        >
+        <div class="switch-container">
+          <input id="dark-mode" type="checkbox" data-js="switch"/>
+          <div class="switch"></div>
+        </div>
+      </div>
+    </section>
+    
       <ul class="card-container" data-js="card-container">
         <!-- <li class="card">
           <div class="card__image-container">
@@ -64,6 +77,9 @@
       <!-- <span class="navigation__pagination" data-js="pagination">1 / 42</span>
       <button class="button button--next" data-js="button-next">next</button> -->
     </nav>
+
+  
+
   </body>
   <script type="module" src="./index.js"></script>
 </html>

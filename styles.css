@@ -14,6 +14,7 @@
   --color-secondary: #f6f6f6;
   --font-family: system-ui;
   background-color: #97ce4c;
+
 }
 
 body {
@@ -37,3 +38,29 @@ main {
 .title__logo {
   width: 40%;
 }
+
+
+/* Dark mode */
+.settings__switch-container input {
+  position: absolute;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  z-index: 1;
+}
+.settings__dark-mode-wrapper {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+body.dark-mode {
+  background-color: blueviolet;
+  color: greenyellow;
+  display: grid;
+
+}
+
