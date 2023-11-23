@@ -53,10 +53,6 @@ export async function fetchCharacters() {
     cardContainer.append(characterCard);
   });
 
-  // Set startpage on empty search
-  if (searchQuery === "") {
-    page = 1;
-  }
   // Set maxPage based on the number of pages in the API response
   if (apiData.info && apiData.info.pages) {
     maxPage = apiData.info.pages;
@@ -83,6 +79,10 @@ function updatePagination() {
 //Search event listners
 searchBar.addEventListener("input", (event) => {
   searchQuery = event.target.value;
+  // Set start page on empty search
+  if (searchQuery.length < 2) {
+    page = 1;
+  }
   fetchCharacters();
 });
 
