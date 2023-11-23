@@ -63,6 +63,8 @@ body.dark-mode {
   background-color: yellowgreen;
   color: blueviolet;
   display: grid;
+  background-image: url(./assets/portal-rick-and-morty.gif);
+  background-repeat: repeat;
 }
 
 .switch-container input {
