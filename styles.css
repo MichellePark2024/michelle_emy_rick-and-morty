@@ -24,7 +24,7 @@
     rgba(255, 255, 255, 1) 100%,
   ),
   url("./asset/wallpaper2.jpg"); */
-  background-image: url(./assets/wallpaper2.jpg);
+  /* background-image: url(./assets/wallpaper2.jpg); */
   
   background-attachment: fixed;
   background-color: blueviolet;
