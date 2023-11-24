@@ -9,4 +9,5 @@
 .navigation__pagination {
   display: grid;
   place-items: center;
+  font-weight: 700;
 }

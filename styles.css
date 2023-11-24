@@ -7,12 +7,26 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
 
 :root {
   --color-primary: rgb(51, 51, 51);
   --color-secondary: #f6f6f6;
   --font-family: system-ui;
+  /* --background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 10%,
+    rgba(255, 255, 255, 0.25) 25%,
+    rgba(255, 255, 255, 0.7) 40%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 1) 75%,
+    rgba(255, 255, 255, 1) 100%,
+  ),
+  url("./asset/wallpaper2.jpg"); */
+  background-image: url(./assets/wallpaper2.jpg);
+  
+  background-attachment: fixed;
   background-color: blueviolet;
   --accent-color: yellowgreen;
   --active-color: rgba(0, 155, 255, 1);
@@ -23,6 +37,7 @@ body {
   color: var(--color-primary);
   padding: 20px;
   /* cursor: url("./assets/cursor.png"), auto; */
+  
 }
 
 main {
@@ -34,6 +49,7 @@ main {
 .title {
   padding: 10px 0;
   text-align: center;
+  
 }
 
 .title__logo {
@@ -51,12 +67,14 @@ main {
   left: 0;
   margin: 0;
   z-index: 1;
+  
 }
 .settings__dark-mode-wrapper {
   display: flex;
   justify-content: center;
   gap: 10px;
   align-items: center;
+  font-weight: 700;
 }
 
 body.dark-mode {
@@ -76,6 +94,7 @@ body.dark-mode {
   left: 0;
   margin: 0;
   z-index: 1;
+  
 }
 
 input:focus + .switch {
@@ -95,6 +114,7 @@ input:checked + .switch:after {
   position: relative;
   height: 25px;
   width: 50px;
+  
 }
 
 .switch {

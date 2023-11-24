@@ -10,6 +10,7 @@
   display: grid;
   grid-template-columns: 1fr 24px;
   border-radius: 20px;
+  
 }
 
 .search-bar__input[type="text"] {
